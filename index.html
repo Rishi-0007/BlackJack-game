@@ -1,0 +1,34 @@
+<html lang="english">
+<head>
+    <title>BlackJack</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="playing-card.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Black Jack</h1>
+    <p id="message-el">Hi, welcome to Black Jack!</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
+    <script src="index.js"></script>
+    <p id="reward-el"></p>
+    <div id="how-to-play">
+        <h2>How to play</h2>
+        <p>
+            The goal is to get total sum of 21 without going over it.
+            <br>
+            On clicking Start Game, the player gets two cards.
+            <br>
+            The player can choose to get more cards by clicking New Card.
+            <br>
+            If the player goes over 21, the player loses.
+            <br>
+            If the player gets 21, the player wins.
+            <br>
+        </p>
+    </div>
+</body>
+</html>
