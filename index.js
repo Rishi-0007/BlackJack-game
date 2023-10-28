@@ -5,6 +5,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let isAlive = false
 let hasBlackJack = false
+let startEl = document.getElementById("start-el")
 function startGame() {
     let firstCard = randomCard()
     let secondCard = randomCard()
@@ -26,9 +27,11 @@ function renderGame(){
     } else if (sum === 21) {
         messageEl.textContent = "You've got Blackjack!";
         hasBlackJack = true;
+        startEl.textContent = "RESTART"
     } else {
         messageEl.textContent = "You're out of the game!";
         isAlive = false;
+        startEl.textContent = "RESTART"
     }
 
     let rewardEl = document.getElementById("reward-el")
